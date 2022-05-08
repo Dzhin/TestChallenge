@@ -5,8 +5,5 @@ C:\Users\Yaroslav\source\repos\TestChallehge\TestChallehge\MyForm.cpp(256,25): w
 C:\Users\Yaroslav\source\repos\TestChallehge\TestChallehge\MyForm.cpp(262,25): warning C4244: =: преобразование "__int64" в "int", возможна потеря данных
 C:\Users\Yaroslav\source\repos\TestChallehge\TestChallehge\MyForm.cpp(271,26): warning C4244: =: преобразование "__int64" в "int", возможна потеря данных
 C:\Users\Yaroslav\source\repos\TestChallehge\TestChallehge\MyForm.cpp(279,24): warning C4244: =: преобразование "__int64" в "int", возможна потеря данных
-  Scaling.cpp
-  .NETFramework,Version=v4.8.AssemblyAttributes.cpp
-  Создание кода...
   MyForm.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
   TestChallehge.vcxproj -> C:\Users\Yaroslav\source\repos\TestChallehge\x64\Debug\TestChallehge.exe

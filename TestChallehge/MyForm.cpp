@@ -27,12 +27,12 @@ void main(array<String^>^ args) {
 	Application::Run(% form);
 }
 
-int ampl=100;		//Амплитуда
-int faza=1;	//Фаза(имя phase занято)
-int begin=-10;	//Старт
+int ampl=100;		//Амплитуда   Amplitude
+int faza=1;	//Фаза(имя phase занято) Phase
+int begin=-10;	//Старт  
 int end=10;		//Финиш
-double h=0.1;  //шаг
-int t=0;  //количество тиков таймера
+double h=0.1;  //шаг  Step
+int t=0;  //количество тиков таймера timer tick
 double scaleY = 1;
 double scaleX = 1;
 
@@ -49,20 +49,20 @@ double scaleX = 1;
 
 
 }*/
-//запуск анимации
+//запуск анимации/ start animation
 System::Void TestChallehge::MyForm::buttonStart_Click(System::Object^ sender, System::EventArgs^ e)
 {
 	this->timer1->Start();
 	return System::Void();
 }
-//остановка анимации
+//остановка анимации/ stop animation
 System::Void TestChallehge::MyForm::buttonStop_Click(System::Object^ sender, System::EventArgs^ e)
 {
 	this->timer1->Stop();
 	
 	return System::Void();
 }
-//очистка поля
+//очистка поля/ clear field
 System::Void TestChallehge::MyForm::buttonClear_Click(System::Object^ sender, System::EventArgs^ e)
 {
 	this->timer1->Stop();
@@ -72,7 +72,7 @@ System::Void TestChallehge::MyForm::buttonClear_Click(System::Object^ sender, Sy
 
 	return System::Void();
 }
-//Запоминание последнего сохранения
+//Запоминание последнего сохранения/ Save last saves
 System::Void saveFileNames(std::string fileName) {
 	String^ tmp = Application::StartupPath;
 	std::string filename = msclr::interop::marshal_as<std::string>(tmp);
@@ -85,7 +85,7 @@ System::Void saveFileNames(std::string fileName) {
 	}
 
 }
-//Вспоминание последнего сохранения
+//Вспоминание последнего сохранения/ Load last saves
 std::string loadFileName() {
 	String^ tmp = Application::StartupPath;//получаем путь к папке с исполняемым файлом
 	std::string filename = msclr::interop::marshal_as<std::string>(tmp);
@@ -99,7 +99,7 @@ std::string loadFileName() {
 	}
 	return fileName;
 }
-//сохранение
+//сохранение/save
 System::Void TestChallehge::MyForm::сохранитьToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
 {
 	std::string filename = loadFileName();
@@ -120,7 +120,7 @@ System::Void TestChallehge::MyForm::выходToolStripMenuItem_Click(System::Object^
 }
 
 
-//Сохранить как
+//Сохранить как/save as
 System::Void TestChallehge::MyForm::MenuItemSaveAs_Click(System::Object^ sender, System::EventArgs^ e)
 {
 	//openDlg->Filter = "Image Files(*.BMP;*.JPG;*.GIF)|*.BMP;*.JPG;*.GIF|All files (*.*)|*.*";
@@ -173,7 +173,7 @@ System::Void TestChallehge::MyForm::загрузитьToolStripMenuItem_Click(System::Obj
 
 	return System::Void();
 }
-//Движение графика мышью
+//Движение графика мышью/Mouse movement of the graph 
 
 
 int oldChartX;
@@ -213,7 +213,7 @@ System::Void TestChallehge::MyForm::timer1_Tick(System::Object^ sender, System::
 	return System::Void();
 }
 
-//Отрисовка графика
+//Отрисовка графика/Drawing a graph
 void TestChallehge::MyForm::paintChart()
 {
 		double x = begin;
@@ -250,7 +250,7 @@ System::Void TestChallehge::MyForm::button1_Click(System::Object^ sender, System
 	
 	return System::Void();
 }
-//Изменение значения стартовых данных
+//Изменение значения стартовых данных/Changing the value of the starting data
 System::Void TestChallehge::MyForm::numericA_ValueChanged(System::Object^ sender, System::EventArgs^ e)
 {
 	ampl = Convert::ToInt64(this->numericA->Value);
@@ -281,7 +281,7 @@ System::Void TestChallehge::MyForm::numericEnd_ValueChanged(System::Object^ send
 	return System::Void();
 }
 
-//Маштабирование графика
+//Маштабирование графика/Scaling the graph
 System::Void TestChallehge::MyForm::yplus_Click(System::Object^ sender, System::EventArgs^ e)
 {
 	scaleY /= 2;
