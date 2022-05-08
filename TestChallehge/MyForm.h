@@ -528,8 +528,7 @@ private: System::Void MenuItemSaveAs_Click(System::Object^ sender, System::Event
 
 private: System::Void загрузитьToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
 
-//Движение мыши
-
+//Движение графика/ ChartMoves
 private: System::Void MouseDown(System::Object^ sender, System::Windows::Forms::MouseEventArgs^ e);
 private: System::Void MouseMove(System::Object^ sender, System::Windows::Forms::MouseEventArgs^ e);
 private: System::Void MouseUp(System::Object^ sender, System::Windows::Forms::MouseEventArgs^ e);
