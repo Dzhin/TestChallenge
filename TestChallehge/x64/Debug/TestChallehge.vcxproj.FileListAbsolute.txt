@@ -1,0 +1,4 @@
+C:\Users\Yaroslav\source\repos\TestChallehge\TestChallehge\x64\Debug\TestChallehge.vcxproj.AssemblyReference.cache
+C:\Users\Yaroslav\source\repos\TestChallehge\TestChallehge\x64\Debug\TestChallehge.vcxproj.SuggestedBindingRedirects.cache
+C:\Users\Yaroslav\source\repos\TestChallehge\TestChallehge\x64\Debug\TestChallehge.MyForm.resources
+C:\Users\Yaroslav\source\repos\TestChallehge\TestChallehge\x64\Debug\TestChallehge.vcxproj.GenerateResource.cache
